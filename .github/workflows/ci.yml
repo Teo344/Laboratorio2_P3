@@ -26,6 +26,9 @@ jobs:
             - name: Ejecutar pruebas
               run: npm test
 
+            - name: Build
+              run: npm ci $$ npm run build
+
             - name: Simular despliegue
               run: |
                 echo "Despliegue simulado: La aplicacion pasa el 

@@ -1,6 +1,5 @@
 const fibonacci = require('./math.js');
 
-let numero=0;
 
 describe('Función Fibonacci', () => {
   test('retorna la serie correcta con 5 elementos', () => {

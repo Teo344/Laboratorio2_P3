@@ -1,7 +1,26 @@
 
+function factorial(n) {
+  if (typeof n !== 'number' || n < 0 || !Number.isInteger(n)) {
+    throw new Error('El valor debe ser un número entero mayor o igual a 0');
+  }
+
+  if (n === 0) {
+    return 1;
+  }
+
+  let result = 1;
+
+  for (let i = 1; i <= n; i += 1) {
+    result *= i;
+  }
+
+  return result;
+}
+
+
 function fibonacci(n) {
-  if (typeof n !== 'number' || n <= 0) {
-    throw new Error('El parámetro debe ser un número mayor que 0');
+  if (typeof n !== 'number' || n <= 0 || !Number.isInteger(n)) {
+    throw new Error('El valor debe ser un número entero mayor que 0');
   }
 
   const serie = [];
@@ -19,4 +38,7 @@ function fibonacci(n) {
   return serie;
 }
 
-module.exports = fibonacci;
+module.exports = {
+  factorial,
+  fibonacci,
+};

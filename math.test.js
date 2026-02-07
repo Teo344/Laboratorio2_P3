@@ -9,7 +9,7 @@ describe('Pruebas de funciones matemáticas', () => {
   });
 
   test('factorial de 5 debe ser 120', () => {
-    expect(factorial(5)).toBe(120);
+    expect(factorial(5)).toBe(110);
   });
 
   test('factorial debe lanzar error con número negativo', () => {

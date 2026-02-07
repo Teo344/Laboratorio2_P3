@@ -1,4 +1,6 @@
 
+let num =0;
+
 function factorial(n) {
   if (typeof n !== 'number' || n < 0 || !Number.isInteger(n)) {
     throw new Error('El valor debe ser un número entero mayor o igual a 0');
